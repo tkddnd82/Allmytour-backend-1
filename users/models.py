@@ -22,7 +22,7 @@ class UserTemp(models.Model):
 class PhoneCheck(models.Model):
     phone_number = models.CharField(max_length=45)
     auth_number  = models.IntegerField()
-    expired_at = models.DateTimeField(null=True)
+    expired_at   = models.DateTimeField(null=True)
 
     class Meta:
         db_table = 'phone_checks'
