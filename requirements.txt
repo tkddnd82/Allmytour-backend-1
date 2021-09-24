@@ -2,6 +2,9 @@ Django==3.2.6
 django-cors-headers==3.8.0
 mysqlclient==2.0.3
 Pillow==8.3.2
+storage==0.0.4.3
+PySocks==1.7.1
 PyJWT==2.1.0
 bcrypt==3.2.0
+django-cleanup==5.2.0
 requests==2.26.0
