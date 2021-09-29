@@ -32,7 +32,7 @@ class Option(models.Model):
 
 class ImageFile(models.Model):
     maker = models.ForeignKey('Maker', on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='image', blank=True, null=True)
+    image = models.ImageField(upload_to='image', blank=True, null=True, default='camera.png')
 
     class Meta:
         db_table = 'image_files'
