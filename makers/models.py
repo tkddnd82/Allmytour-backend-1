@@ -17,7 +17,7 @@ class Maker(models.Model):
 
 class MakerOption(models.Model):
     maker       = models.ForeignKey('Maker', on_delete=models.CASCADE)
-    option      = models.ForeignKey('Option', on_delete=models.CASCADE)
+    option      = models.ForeignKey('Option', on_delete=models.CASCADE, null= True)
      
     class Meta:
         db_table = 'maker_options'
@@ -32,7 +32,16 @@ class Option(models.Model):
 
 class ImageFile(models.Model):
     maker = models.ForeignKey('Maker', on_delete=models.CASCADE)
+<<<<<<< HEAD
+<<<<<<< HEAD
     image = models.ImageField(upload_to='image', blank=True, null=True, default='camera.png')
+=======
+    image = models.ImageField(upload_to='image', blank=True, null=True)
+>>>>>>> 4b0e389 (Add: 모델링)
+=======
+    image = models.ImageField(upload_to='image', blank=True, null=True, default='camera.png')
+>>>>>>> df7a403 (Add:makers5)
 
     class Meta:
         db_table = 'image_files'
+
