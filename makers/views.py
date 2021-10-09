@@ -98,7 +98,6 @@ class MakerView(View):
 
         return JsonResponse({'message':'DELETE_SUCCESS'}, status = 200)
 
-
 # class OptionView(View):
 #     def get(self, request):
 #         option = {
